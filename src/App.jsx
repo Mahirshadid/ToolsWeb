@@ -17,7 +17,7 @@ function App() {
       className="w-32 sm:w-1/2 md:w-2/3 lg:w-96 rounded-lg shadow-2xl"
     />
     <div>
-      <h1 className="text-5xl font-bold">Tools and Technologies for Internet Programming</h1>
+      <h1 className="text-3xl sm:text-5xl font-bold">Tools and Technologies for Internet Programming</h1>
       <p className="py-6 text-balance">
         In this course, we'll dive into the cool tools, tricks, and technologies that make the internet run. From building websites to exploring modern web frameworks, you'll get hands-on experience and practical skills to create awesome online applications. Let's get started!
       </p>
@@ -29,7 +29,7 @@ function App() {
 <div className="hero min-h-screen">
   <div className="hero-content flex-col lg:flex-row">
     <div className="text-left max-w-lg">
-      <h1 className="text-5xl font-bold">
+      <h1 className="text-3xl sm:text-5xl font-bold">
         What we have here?
       </h1>
       <p className="py-6">
@@ -38,7 +38,7 @@ function App() {
       </p>
     </div>
 
-    <div className="carousel rounded-box max-w-md">
+    <div className="carousel rounded-box w-64 sm:w-96">
       <div className="carousel-item">
         <img src="https://img.daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.webp" alt="1" />
       </div>
