@@ -1,2 +1,8 @@
 @import "tailwindcss";
 @plugin "daisyui";
+
+@layer components {
+    .carousel-item {
+        height: 24rem;
+    }
+}
