@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
@@ -12,8 +12,15 @@ import jsimg from './assets/JavaScript.png'
 import mongoimg from './assets/mongo.png'
 import nodeimg from './assets/node.png'
 import tailwindimg from './assets/tailwind.jpeg'
+import reactimg from './assets/reactimg.png'
 
 function App() {
+
+  const topic = useRef(null);
+
+  const handscroll = () => {
+    topic.current.scrollIntoView({behavior:"smooth"});
+  }
 
   return (
     <>
@@ -34,24 +41,24 @@ function App() {
               and practical skills to create awesome online applications. Let's
               get started!
             </p>
-            <button className="btn btn-primary">Get Started</button>
+            <button className="btn btn-primary" onClick={handscroll}>Get Started</button>
           </div>
         </div>
       </div>
 
-      <div className="hero min-h-screen">
+      <div className="hero min-h-screen bg-blue-50" ref={topic}>
         <div className="hero-content flex-col lg:flex-row">
           <div className="text-left max-w-lg">
-            <h1 className="text-3xl sm:text-5xl font-bold">
+            <h1 className="text-3xl sm:text-5xl font-bold text-black">
               What we have here?
             </h1>
-            <p className="py-6">
+            <p className="py-6 text-black">
               Explore the tools, frameworks, and techniques that power modern
               web applications. <i>(Swipe the images to find out the Topics)</i>
             </p>
           </div>
 
-          <div className="carousel rounded-box w-64 sm:w-96">
+          <div className="carousel rounded-box w-64 sm:w-96 border-2 border-blue-300 shadow-lg">
             <div className="carousel-item">
               <img src={htmlcss} alt="1" />
             </div>
@@ -69,14 +76,26 @@ function App() {
             </div>
             <div className="carousel-item">
               <img
-                src="https://img.daisyui.com/images/stock/photo-1559181567-c3190ca9959b.webp"
+                src={daisyuimg}
                 alt="6"
               />
             </div>
             <div className="carousel-item">
               <img
-                src="https://img.daisyui.com/images/stock/photo-1601004890684-d8cbf643f5f2.webp"
+                src={mongoimg}
                 alt="7"
+              />
+            </div>
+            <div className="carousel-item">
+              <img
+                src={nodeimg}
+                alt="8"
+              />
+            </div>
+            <div className="carousel-item">
+              <img
+                src={reactimg}
+                alt="9"
               />
             </div>
           </div>
