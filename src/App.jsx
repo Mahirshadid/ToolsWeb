@@ -2,6 +2,7 @@ import { useState, useRef } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import Footer from './components/Footer'
 
 import heroimg from "./assets/hero.jpg"
 import daisyuimg from './assets/daisyui.png'
@@ -101,6 +102,8 @@ function App() {
           </div>
         </div>
       </div>
+
+      <Footer />
     </>
   );
 }
