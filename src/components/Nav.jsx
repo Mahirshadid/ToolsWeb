@@ -13,7 +13,16 @@ const Nav = () => {
           <summary>Topics</summary>
           <ul className="bg-base-100 rounded-t-none p-2 left-[-40px]">
             <li><a>Introduction</a></li>
-            <li><a>HTML (A-Z)</a></li>
+            <li><a>HTML</a></li>
+            <li><a>CSS</a></li>
+            <li><a>GitHub</a></li>
+            <li><a>TailwindCSS</a></li>
+            <li><a>JavaScript</a></li>
+            <li><a>API</a></li>
+            <li><a>ReactJs</a></li>
+            <li><a>Firebase</a></li>
+            <li><a>MongoDB</a></li>
+            <li><a>Full-stack Web App</a></li>
           </ul>
         </details>
       </li>
