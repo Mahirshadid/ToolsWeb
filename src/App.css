@@ -5,4 +5,8 @@
     .carousel-item {
         height: 24rem;
     }
+
+    #inner_lists li:hover {
+        color:lightseagreen;
+    }
 }
