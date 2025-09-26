@@ -1,6 +1,3 @@
-import React from "react";
-import Htmlpage from "../pages/Htmlpage";
-import { Route, Routes } from "react-router-dom";
 import { Link } from "react-router-dom";
 
 const Nav = () => {
@@ -15,9 +12,6 @@ const Nav = () => {
             <details>
               <summary>Topics</summary>
               <ul className="bg-base-100 rounded-t-none p-2 left-[-40px]" id='inner_lists'>
-                <li>
-                  <Link to="/home">Introduction</Link>
-                </li>
                 <li>
                   <Link to="/html">HTML</Link>
                 </li>
