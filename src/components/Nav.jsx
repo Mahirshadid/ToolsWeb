@@ -7,7 +7,7 @@ const Nav = () => {
   return (
     <div className="navbar fixed bg-base-100 shadow-sm z-50">
       <div className="flex-1">
-        <a href='/home' className="btn btn-ghost text-xl">ToolsWeb</a>
+        <a href='/' className="btn btn-ghost text-xl">ToolsWeb</a>
       </div>
       <div className="flex-none">
         <ul className="menu menu-horizontal px-1 ">
