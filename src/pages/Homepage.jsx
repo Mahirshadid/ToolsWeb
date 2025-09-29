@@ -1,5 +1,5 @@
 import React from 'react'
-import { useRef } from 'react'
+import { useRef, useEffect, useState } from 'react'
 
 import heroimg from "../assets/hero.jpg"
 import daisyuimg from '../assets/daisyui.png'
@@ -12,12 +12,34 @@ import nodeimg from '../assets/node.png'
 import tailwindimg from '../assets/tailwind.jpeg'
 import reactimg from '../assets/reactimg.png'
 
+const images = [
+  htmlcss,
+  jsimg,
+  tailwindimg,
+  gitimg,
+  firebaseimg,
+  daisyuimg,
+  mongoimg,
+  nodeimg,
+  reactimg,
+];
+
 const Homepage = () => {
     const topic = useRef(null);
+    const [activeIndex, setActiveIndex] = useState(0);
+
 
     const handscroll = () => {
         topic.current.scrollIntoView({behavior:"smooth"});
     }
+
+    useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveIndex((prev) => (prev + 1) % images.length);
+    }, 2500); // change every 2.5s
+    return () => clearInterval(interval);
+    }, []);
+    
   
     return (
     <>
@@ -56,46 +78,19 @@ const Homepage = () => {
             </p>
           </div>
 
-          <div className="carousel rounded-box w-64 sm:w-96 border-2 border-blue-300 shadow-lg">
-            <div className="carousel-item">
-              <img src={htmlcss} alt="1" />
-            </div>
-            <div className="carousel-item">
-              <img src={jsimg} alt="2" />
-            </div>
-            <div className="carousel-item">
-              <img src={tailwindimg} alt="3" />
-            </div>
-            <div className="carousel-item">
-              <img src={gitimg} alt="4" />
-            </div>
-            <div className="carousel-item">
-              <img src={firebaseimg} alt="5" />
-            </div>
-            <div className="carousel-item">
-              <img
-                src={daisyuimg}
-                alt="6"
-              />
-            </div>
-            <div className="carousel-item">
-              <img
-                src={mongoimg}
-                alt="7"
-              />
-            </div>
-            <div className="carousel-item">
-              <img
-                src={nodeimg}
-                alt="8"
-              />
-            </div>
-            <div className="carousel-item">
-              <img
-                src={reactimg}
-                alt="9"
-              />
-            </div>
+          <div className="carousel rounded-box w-auto sm:w-lg border-2 border-blue-300 shadow-lg overflow-hidden">
+            {images.map((img, i) => (
+              <div
+                key={i}
+                className={`carousel-item transition-transform duration-700 ease-in-out w-full 
+                h-48 sm:h-64 md:h-80l
+                ${i === activeIndex ? "block" : "hidden"}`}
+              >
+                <img src={img}
+                     alt={`topic-${i}`}
+                     className="w-full h-auto sm:h-full object-contain sm:object-cover" />
+              </div>
+            ))}
           </div>
         </div>
       </div>
