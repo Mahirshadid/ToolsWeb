@@ -83,7 +83,7 @@ const Homepage = () => {
               <div
                 key={i}
                 className={`carousel-item transition-transform duration-700 ease-in-out w-full 
-                h-48 sm:h-64 md:h-80l
+                h-auto
                 ${i === activeIndex ? "block" : "hidden"}`}
               >
                 <img src={img}
