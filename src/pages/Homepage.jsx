@@ -66,7 +66,7 @@ const Homepage = () => {
             </p>
             <button className="btn btn-primary" onClick={handscroll}>Get Started</button>
             <button className="btn btn-success ml-4 text-amber-50"> 
-              <a href='public\files\CSE-3532-LECTURE-PLAN-Updated.pdf'
+              <a href='files/CSE-3532-LECTURE-PLAN-Updated.pdf'
               target="_blank"
               rel="noopener noreferrer">View Lecture Plan</a> 
             </button>
