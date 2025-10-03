@@ -65,6 +65,10 @@ const Homepage = () => {
               </Fade>
             </p>
             <button className="btn btn-primary" onClick={handscroll}>Get Started</button>
+            <button className="btn btn-success ml-4 text-amber-50"> 
+              <a href='./public/files/CSE-3532-LECTURE- PLAN (Updated).pdf'
+              download='Tools_Lecture_Plan_MAS.pdf'>Download Lecture Plan</a> 
+            </button>
           </div>
         </div>
       </div>
