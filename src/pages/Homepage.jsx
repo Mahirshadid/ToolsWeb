@@ -1,5 +1,6 @@
 import React from 'react'
 import { useRef, useEffect, useState } from 'react'
+import { Fade } from "react-awesome-reveal";
 
 import heroimg from "../assets/hero.jpg"
 import daisyuimg from '../assets/daisyui.png'
@@ -52,14 +53,16 @@ const Homepage = () => {
           />
           <div>
             <h1 className="text-3xl sm:text-5xl font-bold">
-              Tools and Technologies for Internet Programming
+              <Fade>Tools and Technologies for Internet Programming</Fade>
             </h1>
             <p className="py-6 text-balance">
-              In this course, we'll dive into the cool tools, tricks, and
-              technologies that make the internet run. From building websites to
-              exploring modern web frameworks, you'll get hands-on experience
-              and practical skills to create awesome online applications. Let's
-              get started!
+              <Fade>
+                  In this course, we'll dive into the cool tools, tricks, and
+                technologies that make the internet run. From building websites to
+                exploring modern web frameworks, you'll get hands-on experience
+                and practical skills to create awesome online applications. Let's
+                get started!
+              </Fade>
             </p>
             <button className="btn btn-primary" onClick={handscroll}>Get Started</button>
           </div>
@@ -74,7 +77,7 @@ const Homepage = () => {
             </h1>
             <p className="py-6 text-black">
               Explore the tools, frameworks, and techniques that power modern
-              web applications. <i>(Swipe the images to find out the Topics)</i>
+              web applications.
             </p>
           </div>
 
