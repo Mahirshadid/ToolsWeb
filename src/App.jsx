@@ -14,7 +14,7 @@ import Reactpage from './pages/Reactpage'
 import Nodepage from './pages/Nodepage'
 import Firebasepage from './pages/Firebasepage'
 import Mongopage from './pages/Mongopage'
-import Fullstackpage from './pages/fullstackpage'
+import Finalpage from './pages/Finalpage'
 
 
 function App() {
@@ -33,7 +33,7 @@ function App() {
         <Route path='/node' element={<Nodepage />} />
         <Route path='/firebase' element={<Firebasepage />} />
         <Route path='/mongo' element={<Mongopage />} />
-         <Route path='/fullstack' element={<Fullstackpage />} />
+         <Route path='/fullstack' element={<Finalpage />} />
       </Routes>
 
     </>

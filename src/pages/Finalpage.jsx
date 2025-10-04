@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react'
 
-const fullstackpage = () => {
+const Finalpage = () => {
   return (
-    <div className="hero bg-base-200 min-h-screen">
+     <div className="hero bg-base-200 min-h-screen">
       <div className="hero-content flex-col mt-14 text-center">
         <div className="card w-4/5 lg:card-side bg-base-100 shadow-sm">
           <figure className="w-full lg:w-3xs">
@@ -103,7 +103,7 @@ const fullstackpage = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default fullstackpage;
+export default Finalpage
