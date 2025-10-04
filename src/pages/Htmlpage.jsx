@@ -7,7 +7,7 @@ const Htmlpage = () => {
       <div className="hero-content flex flex-col items-center max-w-3xl">
         <Marquee className='w-full'>
           <h3 className='text-2xl sm:text-3xl md:text-4xl font-bold text-center hover:text-cyan-400'>
-          <a href='https://www.w3schools.com/html/' target='_blank'>Introduction to HTML</a></h3>
+          <a  className="link-hover" href='https://www.w3schools.com/html/' target='_blank'>Introduction to HTML</a></h3>
         </Marquee>
         
         

@@ -1,6 +1,6 @@
 import React from 'react'
 import { useRef, useEffect, useState } from 'react'
-import { Fade } from "react-awesome-reveal";
+import { Fade, Slide } from "react-awesome-reveal";
 
 import heroimg from "../assets/hero.jpg"
 import daisyuimg from '../assets/daisyui.png'
@@ -45,7 +45,7 @@ const Homepage = () => {
     return (
     <>
     
-      <div className="hero min-h-screen" id='home'>
+      <div className="hero bg-base-200 min-h-screen" id='home'>
         <div className="hero-content flex-col lg:flex-row-reverse">
           <img
             src={heroimg}
@@ -86,7 +86,7 @@ const Homepage = () => {
             </p>
           </div>
 
-          <div className="carousel rounded-box w-auto sm:w-lg border-2 border-blue-300 shadow-lg overflow-hidden">
+          <div className="carousel rounded-box w-auto sm:w-lg border-2 border-base-200 shadow-lg overflow-hidden">
             {images.map((img, i) => (
               <div
                 key={i}
@@ -94,14 +94,17 @@ const Homepage = () => {
                 h-auto
                 ${i === activeIndex ? "block" : "hidden"}`}
               >
-                <img src={img}
+                <Fade>
+                  <img src={img}
                      alt={`topic-${i}`}
                      className="w-full h-auto sm:h-full object-contain sm:object-cover" />
+                </Fade>
               </div>
             ))}
           </div>
         </div>
       </div>
+            
     </>
   )
 }
