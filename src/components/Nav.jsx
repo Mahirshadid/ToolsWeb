@@ -37,7 +37,10 @@ const Nav = () => {
                   <Link to="/firebase">Firebase</Link>
                 </li>
                 <li>
-                  <Link to="/mongodb">MongoDB</Link>
+                  <Link to="/node">NodeJs</Link>
+                </li>
+                <li>
+                  <Link to="/mongo">MongoDB</Link>
                 </li>
                 <li>
                   <Link to="/fullstack">Full-stack Web App</Link>

@@ -9,7 +9,13 @@ import JSpage from './pages/JSpage'
 import APIpage from './pages/APIpage'
 
 import { Route, Routes } from 'react-router-dom'
+
 import Reactpage from './pages/Reactpage'
+import Nodepage from './pages/Nodepage'
+import Firebasepage from './pages/Firebasepage'
+import Mongopage from './pages/Mongopage'
+import Fullstackpage from './pages/fullstackpage'
+
 
 function App() {
 
@@ -24,6 +30,10 @@ function App() {
         <Route path='/javascript' element={<JSpage />} />
         <Route path='/api' element={<APIpage />} />
         <Route path='/react' element={<Reactpage />} />
+        <Route path='/node' element={<Nodepage />} />
+        <Route path='/firebase' element={<Firebasepage />} />
+        <Route path='/mongo' element={<Mongopage />} />
+         <Route path='/fullstack' element={<Fullstackpage />} />
       </Routes>
 
     </>
