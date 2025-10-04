@@ -1,6 +1,6 @@
 import React from "react";
 
-const Fullstackpage = () => {
+const fullstackpage = () => {
   return (
     <div className="hero bg-base-200 min-h-screen">
       <div className="hero-content flex-col mt-14 text-center">
@@ -106,4 +106,4 @@ const Fullstackpage = () => {
   );
 };
 
-export default Fullstackpage;
+export default fullstackpage;
