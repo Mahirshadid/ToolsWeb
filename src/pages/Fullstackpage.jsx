@@ -8,7 +8,7 @@ const Fullstackpage = () => {
           <figure className="w-full lg:w-3xs">
             <img
               src="https://img.daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.webp"
-              alt="Album"
+              alt="Album1"
             />
           </figure>
           <div className="card-body">
@@ -37,7 +37,7 @@ const Fullstackpage = () => {
           <figure className="w-full lg:w-3xs">
             <img
               src="https://img.daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.webp"
-              alt="Album"
+              alt="Album2"
             />
           </figure>
           <div className="card-body">
@@ -64,7 +64,7 @@ const Fullstackpage = () => {
           <figure className="w-full lg:w-3xs">
             <img
               src="https://img.daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.webp"
-              alt="Album"
+              alt="Album3"
             />
           </figure>
           <div className="card-body">
