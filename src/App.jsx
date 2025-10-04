@@ -6,8 +6,10 @@ import Csspage from './pages/Csspage'
 import Githubpage from './pages/Githubpage'
 import Tailwindpsge from './pages/Tailwindpsge'
 import JSpage from './pages/JSpage'
+import APIpage from './pages/APIpage'
 
 import { Route, Routes } from 'react-router-dom'
+import Reactpage from './pages/Reactpage'
 
 function App() {
 
@@ -20,6 +22,8 @@ function App() {
         <Route path='/github' element={<Githubpage />} />
         <Route path='/tailwind' element={<Tailwindpsge />} />
         <Route path='/javascript' element={<JSpage />} />
+        <Route path='/api' element={<APIpage />} />
+        <Route path='/react' element={<Reactpage />} />
       </Routes>
 
     </>
